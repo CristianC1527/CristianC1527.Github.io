@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cristian Celi | Portfolio</title>
+<meta name="description" content="Personal portfolio of Cristian Celi.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EEF3F1; --ink:#14282B; --muted:#4D6165; --line:#C3D2CF;
+  --accent:#1F6F68; --mark:#FFD84D; --card:#FFFFFF;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#0F1D1F; --ink:#E6F0EE; --muted:#9DB3B0; --line:#2A3F42; --accent:#6FD0C4; --mark:#6B5A00; --card:#162729;}
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:1.15rem;line-height:1.65}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.5rem}
+nav{display:flex;gap:1.5rem;padding:1.5rem 0;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500}
+nav a{color:var(--ink);text-decoration:none}
+nav a:hover{color:var(--accent)}
+nav .name{margin-right:auto;font-weight:700}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;line-height:1.1;margin:0}
+header{padding:4rem 0 5rem}
+h1{font-size:clamp(2.2rem,6.5vw,4.2rem);font-weight:700;letter-spacing:-0.02em;max-width:18ch}
+h1 mark{background:linear-gradient(transparent 60%,var(--mark) 60%);color:inherit}
+.sub{margin-top:1.5rem;color:var(--muted);max-width:52ch}
+section{padding:3rem 0;border-top:1px solid var(--line)}
+h2{font-size:1.9rem;margin-bottom:1.5rem}
+.skills{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.6rem}
+.skills li{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500;font-size:1rem;padding:.4rem .9rem;border:1.5px solid var(--accent);border-radius:999px}
+.skills li.top{background:var(--accent);color:var(--bg)}
+.project{display:grid;gap:.4rem;padding:1.5rem;margin-bottom:1rem;background:var(--card);border-left:5px solid var(--accent);border-radius:4px}
+.project h3{font-size:1.35rem}
+.project p{margin:0;color:var(--muted)}
+.links{display:flex;gap:1.25rem;font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:500;font-size:1rem;margin-top:.4rem}
+footer{padding:2rem 0 3rem;color:var(--muted);font-size:1rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <span class="name">Cristian Celi</span>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <header id="about">
+    <!-- 1. PERSONAL STATEMENT: replace with one sentence about who you are professionally -->
+    <h1>I'm a <mark>finance-focused</mark> student who turns raw data into clear business insights with Excel, SQL, and Python.</h1>
+    <p class="sub">Open to internships and entry-level roles in finance and data analysis.</p>
+  </header>
+
+  <!-- 2. SKILLS: swap in your own. Add class "top" to the ones you most want noticed. -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul class="skills">
+      <li class="top">Excel</li>
+      <li class="top">SQL</li>
+      <li class="top">Python</li>
+      <li>Financial modeling basics</li>
+      <li>Data analysis</li>
+      <li>Git &amp; GitHub</li>
+      <li>HTML &amp; CSS</li>
+    </ul>
+  </section>
+
+  <!-- 3. PROJECTS: replace titles, descriptions, and links with your real work -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <h3>Sales Analysis in SQL</h3>
+      <p>Built a small customers and orders database, then wrote queries for revenue by region, top customers, and monthly revenue with a running total using joins, grouping, and window functions.</p>
+    </article>
+
+    <article class="project">
+      <h3>Budget Analyzer in Python</h3>
+      <p>Wrote a Python script that reads a CSV of expenses and reports spending by category and by month, and points out the largest category.</p>
+    </article>
+
+    <article class="project">
+      <h3>Wall Street Prep Excel Course</h3>
+      <p>Completed the Wall Street Prep Excel course, building the formula, lookup, and model-formatting skills used in finance work.</p>
+    </article>
+  </section>
+
+  <footer id="contact">
+    Contact: <a href="mailto:cristianac015@gmail.com">cristianac015@gmail.com</a> ·
+    <a href="https://github.com/CristianC1527">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/cristian-celi-344873343/">LinkedIn</a>
+  </footer>
+</div>
+</body>
+</html>
